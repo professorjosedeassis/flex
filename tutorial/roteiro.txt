@@ -1,0 +1,6 @@
+
+                         preço etanol / consumo etanol(km/l)
+índice de vantagem = -------------------------------------------
+                      preço gasolina / consumo gasolina (km/l)
+
+se indice maior que 1 - gasolina, senão álcool

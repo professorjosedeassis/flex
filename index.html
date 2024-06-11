@@ -5,26 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App - FLEX</title>
+    <link rel="shortcut icon" href="./img/favicon3.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
         <h1>App - FLEX</h1>
-        <form id="frmFlex">
+        <form>
             <h2>Preço do litro (R$):</h2>
             <p>Etanol</p>
-            <input type="number" name="etanol">
+            <input type="number" id="etanol">
             <p>Gasolina</p>
-            <input type="number" name="gasolina">
+            <input type="number" id="gasolina">
             <h2>Consumo médio do veículo (Km/L):</h2>
             <p>Etanol (Km/L)</p>
-            <input type="number" name="kmEtanol">
+            <input type="number" id="kmEtanol">
             <p>Gasolina (Km/L)</p>
-            <input type="number" name="kmGasolina">
+            <input type="number" id="kmGasolina">
             <img src="./img/flex.png" alt="medidor flex" id="status">
             <input type="button" value="Calcular" onclick="calcular()">
             <input type="reset" value="Limpar" onclick="limpar()">
+            <a href="https://joseassis.com.br/"><img src="./img/about.png" alt="icon about"></a>
         </form>
     </div>
     <script src="app.js"></script>

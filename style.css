@@ -19,3 +19,6 @@ img {
     height: auto;  
 }
 
+.error {
+    border-color: red;
+}
