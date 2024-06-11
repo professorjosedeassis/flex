@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App - FLEX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>App - FLEX</h1>
+        <form id="frmFlex">
+            <h2>Preço do litro (R$):</h2>
+            <p>Etanol</p>
+            <input type="number" name="etanol">
+            <p>Gasolina</p>
+            <input type="number" name="gasolina">
+            <h2>Consumo médio do veículo (Km/L):</h2>
+            <p>Etanol (Km/L)</p>
+            <input type="number" name="kmEtanol">
+            <p>Gasolina (Km/L)</p>
+            <input type="number" name="kmGasolina">
+            <img src="./img/flex.png" alt="medidor flex" id="status">
+            <input type="button" value="Calcular" onclick="calcular()">
+            <input type="reset" value="Limpar" onclick="limpar()">
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
