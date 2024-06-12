@@ -4,22 +4,42 @@
  * @link https://joseassis.com.br/
  */
 
-let etanol, gasolina, kmEtanol, kmGasolina
+let gasolina, etanol, kmGasolina, kmEtanol, vantagem
 
 function calcular() {
-    // pegar valore dos inputs
-    etanol = Number(document.getElementById('etanol').value)
+    // pegar valores dos inputs
     gasolina = Number(document.getElementById('gasolina').value)
-    kmEtanol = Number(document.getElementById('kmEtanol').value)
+    etanol = Number(document.getElementById('etanol').value)
     kmGasolina = Number(document.getElementById('kmGasolina').value)
-    console.log(etanol,gasolina,kmEtanol,kmGasolina)
+    kmEtanol = Number(document.getElementById('kmEtanol').value)
+    console.log(gasolina, etanol, kmGasolina, kmEtanol)
 
-    if (etanol === 0) {
-        
-       document.getElementById('etanol').classList.add('error')
+    // validação dos campos
+    if (gasolina === 0) {
+        alert("Preencha o valor da gasolina")        
+        document.getElementById('gasolina').focus()
+    } else if (etanol === 0) {
+        alert("Preencha o valor do etanol") 
+        document.getElementById('etanol').focus()
+    } else if (kmGasolina === 0) {
+        alert("Preencha o consumo médio de gasolina (km/L)") 
+        document.getElementById('kmGasolina').focus()
+    } else if (kmEtanol === 0) {
+        alert("Preencha o consumo médio de etanol (km/L)") 
+        document.getElementById('kmEtanol').focus()
+    } else {       
+        // calcular a vantagem
+        vantagem = (etanol / kmEtanol) / (gasolina / kmGasolina)
+        console.log(vantagem)
+        // exbir o melhor custo/benefíco   
+        if (vantagem < 1) {
+            document.getElementById("status").src = "./img/etanol.png"
+        } else {           
+            document.getElementById("status").src = "./img/gasolina.png"
+        }
     }
 }
 
 function limpar() {
-    document.getElementById("status").src="./img/flex.png"
+    document.getElementById("status").src = "./img/flex.png"
 }

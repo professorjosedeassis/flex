@@ -14,21 +14,20 @@
         <h1>App - FLEX</h1>
         <form>
             <h2>Preço do litro (R$):</h2>
-            <p>Etanol</p>
-            <input type="number" id="etanol">
-            <p>Gasolina</p>
-            <input type="number" id="gasolina">
-            <h2>Consumo médio do veículo (Km/L):</h2>
-            <p>Etanol (Km/L)</p>
-            <input type="number" id="kmEtanol">
-            <p>Gasolina (Km/L)</p>
-            <input type="number" id="kmGasolina">
+            
+                <p>Gasolina<input type="number" id="gasolina" placeholder="0.00"></p>                
+                <p>Etanol<input type="number" id="etanol" placeholder="0.00"></p>                
+                <h2>Consumo médio do veículo (Km/L):</h2>
+                <p>Gasolina (Km/L)<input type="number" id="kmGasolina" placeholder="0.0"></p>
+                <p>Etanol (Km/L)<input type="number" id="kmEtanol" placeholder="0.0"></p>
+                
+           
             <img src="./img/flex.png" alt="medidor flex" id="status">
             <input type="button" value="Calcular" onclick="calcular()">
             <input type="reset" value="Limpar" onclick="limpar()">
             <a href="https://joseassis.com.br/"><img src="./img/about.png" alt="icon about"></a>
         </form>
-    </div>
+    
     <script src="app.js"></script>
 </body>
 

@@ -8,10 +8,20 @@ body {
     font-size: 1em;    
 }
 
-.container {
+.container {   
     margin: 0 auto;
     max-width: 400px;
     padding: 20px;    
+}
+
+h1 {
+    text-align: center;
+    color: #f24f00;
+}
+
+h2 {
+    font-size: 1.1em;
+    margin: 20px 0px 10px 0px;
 }
 
 img {
@@ -19,6 +29,7 @@ img {
     height: auto;  
 }
 
-.error {
-    border-color: red;
+.erro {
+    border: 1px solid #ff0000;
 }
+
