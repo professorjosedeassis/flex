@@ -3,4 +3,7 @@
 vantagem = -----------------------------------------
             preço gasolina / consumo gasolina (km/l)
 
-se indice maior que 1 - gasolina, senão álcool
+Custo x benefício:
+vantagem > 1 (gasolina)
+vantagem < 1 (etanol)
+vantagem = 1 (indiferente)
