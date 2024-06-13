@@ -12,7 +12,7 @@ function calcular() {
     etanol = Number(document.getElementById('etanol').value)
     kmGasolina = Number(document.getElementById('kmGasolina').value)
     kmEtanol = Number(document.getElementById('kmEtanol').value)
-    console.log(gasolina, etanol, kmGasolina, kmEtanol)
+   // console.log(gasolina, etanol, kmGasolina, kmEtanol)
 
     // validação dos campos
     if (gasolina === 0) {
@@ -30,7 +30,7 @@ function calcular() {
     } else {       
         // calcular a vantagem
         vantagem = (etanol / kmEtanol) / (gasolina / kmGasolina)
-        console.log(vantagem)
+        //console.log(vantagem)
         // exbir o melhor custo/benefíco   
         if (vantagem < 1) {
             document.getElementById("status").src = "./img/etanol.png"

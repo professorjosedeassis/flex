@@ -11,24 +11,33 @@
 
 <body>
     <div class="container">
-        <h1>App - FLEX</h1>
+        <h1>Gasolina ou Etanol?</h1>
         <form>
             <h2>Preço do litro (R$):</h2>
-            
-                <p>Gasolina<input type="number" id="gasolina" placeholder="0.00"></p>                
-                <p>Etanol<input type="number" id="etanol" placeholder="0.00"></p>                
-                <h2>Consumo médio do veículo (Km/L):</h2>
-                <p>Gasolina (Km/L)<input type="number" id="kmGasolina" placeholder="0.0"></p>
-                <p>Etanol (Km/L)<input type="number" id="kmEtanol" placeholder="0.0"></p>
-                
-           
-            <img src="./img/flex.png" alt="medidor flex" id="status">
-            <input type="button" value="Calcular" onclick="calcular()">
-            <input type="reset" value="Limpar" onclick="limpar()">
-            <a href="https://joseassis.com.br/"><img src="./img/about.png" alt="icon about"></a>
+            <p>Gasolina<input type="number" id="gasolina" placeholder="0.00"></p>
+            <p>Etanol<input type="number" id="etanol" placeholder="0.00"></p>
+            <h2>Consumo médio do veículo (Km/Litro):</h2>
+            <p>Km/Litro Gasolina<input type="number" id="kmGasolina" placeholder="0.0"></p>
+            <p>Km/Litro Etanol<input type="number" id="kmEtanol" placeholder="0.0"></p>
+            <hr>
+            <div id="result">
+                <table>
+                    <tr>
+                        <td rowspan="3"><img src="./img/flex.png" alt="medidor flex" id="status"></td>
+                        <td><img src="./img/button1.png" alt="icon about" onclick="calcular()"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="reset" value="" onclick="limpar()" id="btnClean"></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://joseassis.com.br/"><img src="./img/info1.png" alt="icon about"></a></td>
+                    </tr>
+                </table>            
+            </div>
+          
         </form>
-    
-    <script src="app.js"></script>
+
+        <script src="app.js"></script>
 </body>
 
 </html>
