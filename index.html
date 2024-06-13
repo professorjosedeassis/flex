@@ -5,38 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App - FLEX</title>
-    <link rel="shortcut icon" href="./img/favicon3.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
         <h1>Gasolina ou Etanol?</h1>
-        <form>
-            <h2>Preço do litro (R$):</h2>
-            <p>Gasolina<input type="number" id="gasolina" placeholder="0.00"></p>
-            <p>Etanol<input type="number" id="etanol" placeholder="0.00"></p>
-            <h2>Consumo médio do veículo (Km/Litro):</h2>
-            <p>Km/Litro Gasolina<input type="number" id="kmGasolina" placeholder="0.0"></p>
-            <p>Km/Litro Etanol<input type="number" id="kmEtanol" placeholder="0.0"></p>
-            <hr>
-            <div id="result">
-                <table>
-                    <tr>
-                        <td rowspan="3"><img src="./img/flex.png" alt="medidor flex" id="status"></td>
-                        <td><img src="./img/button1.png" alt="icon about" onclick="calcular()"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="reset" value="" onclick="limpar()" id="btnClean"></td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://joseassis.com.br/"><img src="./img/info1.png" alt="icon about"></a></td>
-                    </tr>
-                </table>            
-            </div>
-          
-        </form>
-
+        <h2>Preço do litro (R$):</h2>
+        <p>Gasolina<input type="number" id="gasolina" placeholder="0.00"></p>
+        <p>Etanol<input type="number" id="etanol" placeholder="0.00"></p>
+        <h2>Consumo médio do veículo (Km/Litro):</h2>
+        <p>Km/Litro Gasolina<input type="number" id="kmGasolina" placeholder="0.0"></p>
+        <p>Km/Litro Etanol<input type="number" id="kmEtanol" placeholder="0.0"></p>
+        <hr>       
+            <table>
+                <tr>
+                    <td rowspan="2"><img src="./img/flex.png" alt="medidor" id="status"></td>
+                    <td><img src="./img/calcflex.png" alt="flex" onclick="calcular()"></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.youtube.com/@ProfessorJosedeAssis"><img src="./img/youtube.png" alt="youtube"></a></td>
+                </tr>
+            </table>      
         <script src="app.js"></script>
 </body>
 

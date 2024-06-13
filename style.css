@@ -15,54 +15,36 @@ body {
     text-align: right;
 }
 
+img {
+    max-width: 100%;   
+}
+
 h1 {
     text-align: center;
     color: #4d4d4d;
 }
 
 h2 {
-    font-size: 1.1em;
-    color: #3c3c3c;
+    font-size: 1.2em;
+    font-weight: 400;   
     background-color: #e5e5e5;
     padding: 2px;
-    margin: 20px 0px 10px 0px;
+    margin: 10px 0px;
 }
 
 p {
-    font-size: 1.25em;
+    font-size: 1.2em;
 }
 
 hr {
-    margin: 20px 0px;
+    margin: 10px 0px;
 }
 
-input[type=number] {
+input {
     width: 70px;
-    padding: 10px;
-    margin-left: 20px;
+    padding: 9px;
+    margin-left: 15px;
     font-size: 1.2em;
     border-radius: 5px;
     border: 1px solid #4d4d4d;
-}
-
-#result {
-    text-align: center;
-}
-
-td {
-    border: none;    
-}
-
-img {
-    max-width: 90%;
-    height: auto;
-}
-
-#btnClean {
-    background: url('./img/clear.png') no-repeat center center;
-    background-size: contain;
-    width: 50px;
-    height: 50px;
-    border: none;
-    cursor: pointer;
 }
