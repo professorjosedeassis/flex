@@ -1,0 +1,13 @@
+{
+    "name": "FLEX",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait",  
+    "icons": [        
+        {
+            "src": "./img/flex_512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

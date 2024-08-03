@@ -1,5 +1,5 @@
 /**
- * App - Flex
+ * PWA - Flex
  * @author Professor José de Assis
  * @link https://joseassis.com.br/
  */
