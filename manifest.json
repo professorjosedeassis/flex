@@ -1,7 +1,7 @@
 {
     "name": "Gasolina ou Etanol?",
     "short_name": "Flex",
-    "start_url": "/index.html",
+    "start_url": "/flex/index.html",
     "display": "standalone",
     "orientation": "portrait-primary",
     "background_color": "#fff",
