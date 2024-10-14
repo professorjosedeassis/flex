@@ -8,17 +8,13 @@ function calcular() {
     // pegar valores dos inputs
     let gasolina = Number(document.getElementById('gasolina').value)
     let etanol = Number(document.getElementById('etanol').value)
-    let kmGasolina = Number(document.getElementById('kmGasolina').value)
-    let kmEtanol = Number(document.getElementById('kmEtanol').value)    
+    let kmlGasolina = Number(document.getElementById('kmGasolina').value)
+    let kmlEtanol = Number(document.getElementById('kmEtanol').value)
     // calcular a vantagem
-    vantagem = (etanol / kmEtanol) / (gasolina / kmGasolina)
-    //console.log(vantagem)
-    // exbir o melhor custo/benefíco   
-    if (vantagem > 1) {
-        document.getElementById("status").src = "./img/gasolina.png"       
-    } else if (vantagem < 1) {
-         document.getElementById("status").src = "./img/etanol.png"
+    if (etanol < (kmlEtanol / kmlGasolina) * gasolina) {
+        document.getElementById("status").src = "./img/etanol.png"
     } else {
-        document.getElementById("status").src = "./img/flex.png"
+        document.getElementById("status").src = "./img/gasolina.png"
     }
+
 }

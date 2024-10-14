@@ -1,9 +1,23 @@
+Calcular vantagem
 
-              preço etanol / consumo etanol(km/l)
-vantagem = -----------------------------------------
-            preço gasolina / consumo gasolina (km/l)
+                consumo etanol(km/l)
+referencia = --------------------------
+              consumo gasolina (km/l)
 
 Custo x benefício:
-vantagem > 1 (gasolina)
-vantagem < 1 (etanol)
-vantagem = 1 (indiferente)
+
+se etanol < referencia * gasolina
+  etanol
+senão
+  gasolina
+
+
+___________________________________________________________
+manifest.json
+Sobre o comportamento e a experiência edo usuário, um site precisa para ser carregado precisa se digitado no navegador, já o app basta clicar no ícone instalado no smartphone
+
+chatgpt
+O arquivo manifest.json é um dos componentes principais de uma Progressive Web App (PWA). Ele serve para fornecer informações essenciais ao navegador sobre como o aplicativo deve se comportar quando for instalado no dispositivo do usuário.
+
+link rel="manifest" href="/manifest.json"
+manifest.json (todas as páginas do aplicativo)
